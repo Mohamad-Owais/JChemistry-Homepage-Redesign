@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Responsive Overrides & Media Queries
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Mobile & Tablet Views (Viewport < 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  .utility-bar {
+    display: none !important; /* Hide top contact/social bar */
+  }
+
+  .nav-menu {
+    display: none !important; /* Hide horizontal desktop menu */
+  }
+
+  .nav-actions__login {
+    display: none !important; /* Login handled in sliding menu / bottom bar */
+  }
+
+  .nav-actions .btn-enroll {
+    display: none !important; /* Replace header Enroll CTA with sticky bottom bar */
+  }
+
+  .nav-actions__search-btn {
+    margin-right: var(--space-2); /* Provide spacing next to hamburger toggle */
+  }
+
+  .main-content {
+    padding-top: 72px; /* Standard primary header height (no utility bar offset) */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Views (Viewport >= 768px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Expand sticky bottom bar spacing slightly */
+  .sticky-bottom-bar {
+    padding: var(--space-4) var(--space-6);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop Views (Viewport >= 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    display: none !important; /* Hide hamburger menu toggle */
+  }
+
+  .sticky-bottom-bar {
+    display: none !important; /* Hide mobile sticky CTA bar */
+  }
+
+  .main-content {
+    padding-top: 112px; /* Utility bar (40px) + Primary Header (72px) */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Wide Desktop Views (Viewport >= 1280px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1280px) {
+  /* Adjust container maximum boundaries if necessary */
+  .container {
+    max-width: var(--container-max-width);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+  .header-main,
+  .sticky-bottom-bar,
+  .mobile-drawer,
+  .search-overlay {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

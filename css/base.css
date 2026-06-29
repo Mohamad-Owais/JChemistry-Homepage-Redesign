@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ==========================================================================
+   Base Reset & Document Styles
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Typography Rules
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+h2 {
+  font-size: var(--font-size-2xl);
+}
+h3 {
+  font-size: var(--font-size-xl);
+}
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+/* Lists Reset */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Accessibility Utilities (WCAG AA Compliant)
+   ========================================================================== */
+
+/* Visually Hidden but Screen Reader Accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link logic: floats on top when focused by keyboard */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-4);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-index-skip-link);
+  font-weight: var(--font-weight-medium);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+/* Accessible Focus Outlines */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: var(--radius-xs);
+}
+
+/* Specifically styled touch target helper to enforce WCAG size */
+.accessible-touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Dark Mode — Global Overrides
+   Handles sections with hardcoded backgrounds that don't auto-inherit vars
+   ========================================================================== */
+
+/* Smooth color transitions for the whole page when toggling */
+:root.dark body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Header */
+:root.dark .header-main {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+:root.dark .nav-menu__link {
+  color: var(--color-text-muted);
+}
+
+:root.dark .nav-menu__link:hover,
+:root.dark .nav-menu__link:focus {
+  color: var(--color-text);
+}
+
+:root.dark .hamburger-menu span {
+  background-color: var(--color-text);
+}
+
+:root.dark .logo {
+  color: var(--color-text);
+}
+
+/* Hero floating cards */
+:root.dark .hero__floating-card {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+:root.dark .hero__floating-value {
+  color: var(--color-text);
+}
+
+/* Section headings that reference --color-primary */
+:root.dark h1,
+:root.dark h2,
+:root.dark h3,
+:root.dark h4 {
+  color: var(--color-text);
+}
+
+/* Section tags */
+:root.dark .section-title,
+:root.dark .courses-section__title,
+:root.dark .categories-section__title {
+  color: var(--color-text);
+}
+
+/* Course cards */
+:root.dark .course-card__title {
+  color: var(--color-text);
+}
+
+:root.dark .course-card__rating-row {
+  border-top-color: var(--color-border);
+}
+
+:root.dark .course-card__rating-value {
+  color: var(--color-text);
+}
+
+:root.dark .course-card__price {
+  color: var(--color-text);
+}
+
+:root.dark .course-card__footer {
+  border-top-color: var(--color-border);
+}
+
+:root.dark .course-card__wishlist {
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+}
+
+/* Category cards */
+:root.dark .category-card__title {
+  color: var(--color-text);
+}
+
+/* Trust bar */
+:root.dark .trust-card__value {
+  color: var(--color-text);
+}
+
+/* Search bar */
+:root.dark .search-bar__input {
+  color: var(--color-text);
+}
+
+:root.dark .chip.is-active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+/* Why cards */
+:root.dark .why-card__title {
+  color: var(--color-text);
+}
+
+/* Result cards */
+:root.dark .result-card__info-name {
+  color: var(--color-text);
+}
+
+/* Faculty */
+:root.dark .faculty-badge-card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+:root.dark .faculty-badge-card__value {
+  color: var(--color-text);
+}
+
+:root.dark .faculty-name {
+  color: var(--color-text);
+}
+
+/* FAQ */
+:root.dark .faq-trigger {
+  color: var(--color-text);
+}
+
+/* Navigation actions */
+:root.dark .nav-actions__login {
+  color: var(--color-text-muted);
+}
+
+:root.dark .nav-actions__search-btn,
+:root.dark .theme-toggle {
+  color: var(--color-text-muted);
+}
+
+:root.dark .nav-actions__search-btn:hover,
+:root.dark .theme-toggle:hover {
+  color: var(--color-text);
+}
+
+/* Mega menu */
+:root.dark .mega-menu {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+:root.dark .mega-menu__col-title {
+  color: var(--color-text-muted);
+}
+
+:root.dark .mega-menu__item-title {
+  color: var(--color-text);
+}
+
+:root.dark .mega-menu__item-desc {
+  color: var(--color-text-muted);
+}
+
+:root.dark .mega-menu__footer {
+  background-color: var(--color-surface-alt);
+  border-top-color: var(--color-border);
+}
+
+/* Mobile drawer */
+:root.dark .mobile-drawer {
+  background-color: var(--color-surface);
+}
+
+:root.dark .mobile-drawer__nav-link {
+  color: var(--color-text-muted);
+}
+
+/* Btn secondary */
+:root.dark .btn-secondary {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+:root.dark .btn-secondary:hover {
+  background-color: var(--color-surface-alt);
+}
+
+/* Search overlay */
+:root.dark .search-overlay {
+  background-color: var(--color-surface);
+}
+
+/* Overlay backdrop */
+:root.dark .overlay {
+  background-color: var(--color-overlay-bg);
+}
+
+/* Sticky bottom bar */
+:root.dark .sticky-bottom-bar {
+  background-color: var(--color-surface);
+  border-top-color: var(--color-border);
+}
+
+/* Global page transition on toggle */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

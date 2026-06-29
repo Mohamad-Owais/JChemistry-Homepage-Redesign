@@ -1,0 +1,226 @@
+/**
+ * JChemistry Design System Variables
+ * Modern, academic, trustworthy, and premium tokens.
+ * Using HSL for flexible opacity manipulations where needed.
+ */
+
+:root {
+  /* --- Colors --- */
+
+  /* Brand Colors */
+  --color-primary-hue: 220;
+  --color-primary-saturation: 60%;
+  --color-primary: hsl(
+    var(--color-primary-hue),
+    var(--color-primary-saturation),
+    18%
+  ); /* Deep Academic Blue #0e1e38 */
+  --color-primary-light: hsl(
+    var(--color-primary-hue),
+    var(--color-primary-saturation),
+    30%
+  ); /* #17325c */
+  --color-primary-hover: hsl(
+    var(--color-primary-hue),
+    var(--color-primary-saturation),
+    12%
+  ); /* #091324 */
+
+  --color-accent-hue: 160;
+  --color-accent-saturation: 84%;
+  --color-accent: hsl(
+    var(--color-accent-hue),
+    var(--color-accent-saturation),
+    36%
+  ); /* Premium Emerald/Mint for CTAs #0f9f68 */
+  --color-accent-hover: hsl(
+    var(--color-accent-hue),
+    var(--color-accent-saturation),
+    28%
+  ); /* #0c7c51 */
+  --color-accent-light: hsl(
+    var(--color-accent-hue),
+    var(--color-accent-saturation),
+    94%
+  ); /* Light emerald tint */
+
+  /* Neutral Palette */
+  --color-text: #0f172a; /* Slate 900 (High contrast body text) */
+  --color-text-muted: #475569; /* Slate 600 (Muted descriptive text) */
+  --color-text-light: #94a3b8; /* Slate 400 (Secondary details) */
+
+  --color-bg: #f8fafc; /* Slate 50 (Page background) */
+  --color-surface: #ffffff; /* Pure White (Card & Section backgrounds) */
+  --color-surface-alt: #f1f5f9; /* Slate 100 (Secondary sections/containers) */
+  --color-border: #e2e8f0; /* Slate 200 (Clean divider lines) */
+  --color-border-hover: #cbd5e1; /* Slate 300 */
+
+  /* Utilities & Feedback */
+  --color-error: #ef4444; /* Red 500 */
+  --color-warning: #f59e0b; /* Amber 500 */
+  --color-success: #10b981; /* Emerald 500 */
+  --color-info: #3b82f6; /* Blue 500 */
+
+  /* Focus Indicator (WCAG AA Compliant Outline) */
+  --color-focus: #2563eb; /* High contrast interactive outline */
+  --focus-outline: 2px solid var(--color-focus);
+  --focus-outline-offset: 3px;
+
+  /* Overlays & Dark Mode Anchors (for specific dark components) */
+  --color-overlay-bg: rgba(15, 23, 42, 0.6); /* Backdrop blur overlays */
+  --color-dark-bg: #0f172a; /* Pure Slate 900 for dark banners/footer */
+  --color-dark-surface: #1e293b; /* Slate 800 */
+  --color-dark-text: #f8fafc;
+  --color-dark-text-muted: #94a3b8;
+  --color-dark-border: #334155; /* Slate 700 */
+
+  /* --- Typography --- */
+  --font-family:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 1.875rem; /* 30px */
+  --font-size-3xl: 2.25rem; /* 36px */
+  --font-size-4xl: 3rem; /* 48px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+
+  /* --- Spacing System (4px base grid) --- */
+  --space-0: 0px;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+
+  /* --- Borders and Radii --- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* --- Shadows (Apple / Stripe style layered depth) --- */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg:
+    0 10px 15px -3px rgba(15, 23, 42, 0.08),
+    0 4px 6px -2px rgba(15, 23, 42, 0.04);
+  --shadow-xl:
+    0 20px 25px -5px rgba(15, 23, 42, 0.12),
+    0 10px 10px -5px rgba(15, 23, 42, 0.04);
+  --shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* Focus specific shadow */
+  --shadow-focus: 0 0 0 4px rgba(37, 99, 235, 0.15);
+
+  /* --- Layout & Breakpoints --- */
+  --container-max-width: 1200px;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* --- Z-Index Scale --- */
+  --z-index-sub: -1;
+  --z-index-normal: 1;
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-overlay: 300;
+  --z-index-drawer: 400;
+  --z-index-modal: 500;
+  --z-index-skip-link: 9999;
+
+  /* --- Animation Timings & Transitions --- */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root.dark {
+  /*
+   * Unified dark surface scale — one base hue, ~3% lightness steps.
+   * Modeled after Stripe / Linear / Vercel: barely-there tonal shifts
+   * instead of drastically different background colors per section.
+   *
+   * Base:         #0f1117  (page canvas)
+   * Surface:      #151820  (~3% lighter — cards, nav, hero)
+   * Surface-alt:  #1a1d26  (~3% lighter still — subtle section contrast)
+   */
+  --color-bg:          #0f1117;
+  --color-surface:     #151820;
+  --color-surface-alt: #1a1d26;
+
+  /* Text */
+  --color-text:       #e2e8f0;
+  --color-text-muted: #8892a4;
+  --color-text-light: #5c6678;
+
+  /* Borders — thin, barely visible lines to separate depth layers */
+  --color-border:       #1f2433;
+  --color-border-hover: #2a3144;
+
+  /* Brand — muted so they don't burn against the dark canvas */
+  --color-primary:       #58a6ff;
+  --color-primary-light: #79c0ff;
+  --color-primary-hover: #388bfd;
+
+  /* Accent tint — subtle glow only */
+  --color-accent-light: rgba(6, 214, 160, 0.12);
+
+  /*
+   * Dark-specific helpers: aligned to the same unified scale above.
+   * Testimonials / Footer / CTA sections use these directly and must
+   * stay tonally consistent with the rest of the page.
+   */
+  --color-dark-bg:         #0f1117;
+  --color-dark-surface:    #151820;
+  --color-dark-border:     #1f2433;
+  --color-dark-text:       #e2e8f0;
+  --color-dark-text-muted: #8892a4;
+
+  /* Overlay */
+  --color-overlay-bg: rgba(0, 0, 0, 0.7);
+
+  /* Shadows — elevated in dark for visible card depth */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md:
+    0 4px 8px -1px rgba(0, 0, 0, 0.55), 0 2px 4px -1px rgba(0, 0, 0, 0.35);
+  --shadow-lg:
+    0 10px 20px -3px rgba(0, 0, 0, 0.6), 0 4px 8px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl:
+    0 20px 30px -5px rgba(0, 0, 0, 0.65), 0 10px 12px -5px rgba(0, 0, 0, 0.4);
+}

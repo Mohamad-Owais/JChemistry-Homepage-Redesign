@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Page Layout & Container Systems
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+/* ==========================================================================
+   Layout Block Structures
+   ========================================================================== */
+
+.main-content {
+  flex-grow: 1;
+  padding-top: calc(72px + 40px); /* Primary Header Height + Utility Bar Height */
+  min-height: 80vh;
+}
+
+/* Scroll Lock (applied to body when drawer/search overlay is active) */
+body.scroll-locked {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* ==========================================================================
+   Overlays & Backdrops
+   ========================================================================== */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-overlay-bg);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: var(--z-index-overlay);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Flex Center Utility */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Screen Size Specific Visibility Helpers */
+.hide-on-mobile {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .hide-on-mobile {
+    display: flex !important;
+  }
+  .hide-on-desktop {
+    display: none !important;
+  }
+}

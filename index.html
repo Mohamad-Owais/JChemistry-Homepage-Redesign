@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JChemistry — Premium Coaching for CSIR-NET, GATE, and IIT-JAM Chemistry Aspirants. Access high-quality courses, resources, and expert tutorials.">
+  <title>JChemistry | Premium Coaching for CSIR-NET, GATE & IIT-JAM</title>
+
+  <!-- Global Design System & Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/trust.css">
+
+  <!-- Modular Scripts with Defer for Performance -->
+  <script src="js/accessibility.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/homepage.js" defer></script>
+  <script src="js/trust.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip-to-Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Backdrop overlay for drawer and search modals -->
+  <div class="overlay" aria-hidden="true"></div>
+
+  <!-- Main Sticky Header Wrapper -->
+  <header class="header-main">
+    
+
+    <!-- 2. Primary Navigation Bar -->
+    <nav class="nav-bar" aria-label="Primary site navigation">
+      <div class="container nav-bar__inner">
+        
+        <!-- Logo -->
+        <a href="index.html" class="logo accessible-touch-target" aria-label="JChemistry Homepage">
+          <img src="assets/jchemistry_logo.png" alt="JChemistry Logo" class="logo__img">
+          <span>JChemistry</span>
+        </a>
+
+        <!-- Desktop Main Menu links -->
+        <ul class="nav-menu hide-on-mobile">
+          <li class="nav-menu__item">
+            <!-- Dropdown trigger for Mega Menu -->
+            <a href="#" class="nav-menu__link accessible-touch-target" 
+               id="courses-menu-link"
+               data-courses-trigger 
+               aria-expanded="false" 
+               aria-haspopup="true" 
+               aria-controls="courses-mega-menu">
+              <span>Courses</span>
+              <!-- Dropdown Chevron SVG -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </a>
+
+            <!-- 3. Desktop Courses Mega Menu drop-panel -->
+            <div id="courses-mega-menu" class="mega-menu" aria-labelledby="courses-menu-link">
+              <div class="mega-menu__grid">
+                
+                <!-- Column 1: CSIR-NET -->
+                <div class="mega-menu__col">
+                  <h3 class="mega-menu__col-title">CSIR-NET Prep</h3>
+                  <ul class="mega-menu__list">
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Complete Course</span>
+                        <span class="mega-menu__item-desc">Comprehensive syllabus with mock tests</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Physical Chemistry</span>
+                        <span class="mega-menu__item-desc">Thermodynamics, kinetics & quantum focus</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Organic Chemistry</span>
+                        <span class="mega-menu__item-desc">Reactions, mechanisms & synthesis</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Inorganic Chemistry</span>
+                        <span class="mega-menu__item-desc">Coordination, organometallics & bonding</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Column 2: GATE -->
+                <div class="mega-menu__col">
+                  <h3 class="mega-menu__col-title">GATE Prep</h3>
+                  <ul class="mega-menu__list">
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Complete GATE Syllabus</span>
+                        <span class="mega-menu__item-desc">Numerical ability & subject-specific modules</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Physical Chemistry</span>
+                        <span class="mega-menu__item-desc">Spectroscopy, electrochemistry & solid state</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Organic Chemistry</span>
+                        <span class="mega-menu__item-desc">Stereochemistry, photochemistry & pericyclics</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Inorganic Chemistry</span>
+                        <span class="mega-menu__item-desc">Main groups, bioinorganic & instrumentals</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Column 3: IIT-JAM -->
+                <div class="mega-menu__col">
+                  <h3 class="mega-menu__col-title">IIT-JAM Prep</h3>
+                  <ul class="mega-menu__list">
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Complete MSc Entrance</span>
+                        <span class="mega-menu__item-desc">Structured foundations for Jam aspirants</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Physical Chemistry</span>
+                        <span class="mega-menu__item-desc">Gases, liquid state & chemical equilibrium</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Organic Chemistry</span>
+                        <span class="mega-menu__item-desc">Basic organic, aromaticity & intermediates</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="mega-menu__link">
+                        <span class="mega-menu__item-title">Inorganic Chemistry</span>
+                        <span class="mega-menu__item-desc">Periodic table, chemical bonding & metallurgy</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- Mega Menu Footer bar -->
+              <div class="mega-menu__footer">
+                <span class="mega-menu__footer-text">Not sure which program to pick? We are here to assist.</span>
+                <div class="mega-menu__footer-actions">
+                  <a href="#" class="mega-menu__footer-link">
+                    <span>View all Courses</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                  <a href="#" class="mega-menu__footer-link mega-menu__footer-link--demo">
+                    <span>Try Free Demo Course</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#results" class="nav-menu__link accessible-touch-target">Results</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#faculty" class="nav-menu__link accessible-touch-target">About</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#faq" class="nav-menu__link accessible-touch-target">Free Resources</a>
+          </li>
+        </ul>
+
+        <!-- Desktop Action Buttons -->
+        <div class="nav-actions">
+          
+          <!-- Search Overlay Button -->
+          <button class="nav-actions__search-btn accessible-touch-target" 
+                  aria-label="Search JChemistry site"
+                  aria-haspopup="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button class="theme-toggle accessible-touch-target" id="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <!-- Login Link -->
+          <a href="#courses" class="nav-actions__login accessible-touch-target">Log in</a>
+          
+          <!-- Enroll Now CTA -->
+          <a href="#courses" class="btn-enroll accessible-touch-target">Enroll Now</a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-menu accessible-touch-target" 
+                  aria-expanded="false" 
+                  aria-controls="mobile-drawer" 
+                  aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 4. Mobile Sliding Drawer Navigation -->
+  <nav id="mobile-drawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile menu navigation">
+    
+    <!-- Drawer Header -->
+    <div class="mobile-drawer__header">
+      <!-- Logo inside mobile menu drawer -->
+      <a href="index.html" class="logo accessible-touch-target" aria-label="JChemistry Homepage">
+        <img src="assets/jchemistry_logo.png" alt="JChemistry Logo" class="logo__img logo__img--mobile">
+        <span>JChemistry</span>
+      </a>
+
+      <!-- Drawer Close Button -->
+      <button class="mobile-drawer__close accessible-touch-target" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Drawer Content Scroller -->
+    <div class="mobile-drawer__content">
+      
+      <!-- List Links -->
+      <ul class="mobile-drawer__nav-list">
+        <li>
+          <!-- Accordion trigger for Courses -->
+          <button class="mobile-drawer__accordion-btn accessible-touch-target" aria-expanded="false" aria-controls="mobile-drawer-accordion-panel">
+            <span>Courses</span>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          
+          <!-- Accordion content panel -->
+          <div id="mobile-drawer-accordion-panel" class="mobile-drawer__accordion-panel">
+            
+            <span class="mobile-drawer__subcol-title">CSIR-NET Prep</span>
+            <a href="#" class="mobile-drawer__sublink">Complete Course</a>
+            <a href="#" class="mobile-drawer__sublink">Physical Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Organic Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Inorganic Chemistry</a>
+
+            <span class="mobile-drawer__subcol-title">GATE Prep</span>
+            <a href="#" class="mobile-drawer__sublink">Complete GATE Syllabus</a>
+            <a href="#" class="mobile-drawer__sublink">Physical Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Organic Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Inorganic Chemistry</a>
+
+            <span class="mobile-drawer__subcol-title">IIT-JAM Prep</span>
+            <a href="#" class="mobile-drawer__sublink">Complete MSc Entrance</a>
+            <a href="#" class="mobile-drawer__sublink">Physical Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Organic Chemistry</a>
+            <a href="#" class="mobile-drawer__sublink">Inorganic Chemistry</a>
+
+          </div>
+        </li>
+        <li>
+          <a href="#" class="mobile-drawer__nav-link accessible-touch-target">Results</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-drawer__nav-link accessible-touch-target">About</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-drawer__nav-link accessible-touch-target">Free Resources</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Contact details -->
+      <div class="mobile-drawer__contact-info">
+        <a href="tel:+919876543210" class="mobile-drawer__contact-item accessible-touch-target">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.27 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.58 1 1 0 0 1-.27 1.02z"/></svg>
+          <span>+91 98765 43210</span>
+        </a>
+        <a href="mailto:info@jchemistry.com" class="mobile-drawer__contact-item accessible-touch-target">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>info@jchemistry.com</span>
+        </a>
+        
+        <div class="mobile-drawer__socials">
+          <a href="https://facebook.com" class="mobile-drawer__social-link flex-center accessible-touch-target" aria-label="Visit Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="https://instagram.com" class="mobile-drawer__social-link flex-center accessible-touch-target" aria-label="Visit Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://linkedin.com" class="mobile-drawer__social-link flex-center accessible-touch-target" aria-label="Visit LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://youtube.com" class="mobile-drawer__social-link flex-center accessible-touch-target" aria-label="Visit YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.507 9.388.507 9.388.507s7.517 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://twitter.com" class="mobile-drawer__social-link flex-center accessible-touch-target" aria-label="Visit Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Drawer CTAs -->
+      <div class="mobile-drawer__actions">
+        <a href="#" class="mobile-drawer__btn-login accessible-touch-target">Log in</a>
+        <a href="#" class="btn-enroll accessible-touch-target">Enroll Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 5. Search Overlay Modal -->
+  <div id="search-overlay" class="search-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search website content">
+    <div class="search-overlay__container">
+      
+      <!-- Search Input Header -->
+      <div class="search-overlay__header">
+        <span class="search-overlay__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" class="search-overlay__input" placeholder="Search courses, results, syllabus..." aria-label="Search terms">
+        <button class="search-overlay__close accessible-touch-target" aria-label="Close search overlay">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+  <!-- Search Results Body -->
+      <div class="search-overlay__body" id="search-overlay-body">
+        <!-- Populated by navigation.js -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT — Phase 2: Core Homepage Sections -->
+  <main id="main-content" class="main-content" tabindex="-1">
+
+    <!-- =======================================================
+         1. HERO SECTION
+         ======================================================= -->
+    <section class="hero" aria-label="Homepage hero">
+      <div class="container hero__inner">
+
+        <!-- Left: Copy + CTAs -->
+        <div class="hero__content">
+          <!-- <div class="hero__badge" aria-hidden="true">
+            <span class="hero__badge-dot"></span>
+            India's Premier Chemistry Coaching
+          </div> -->
+
+          <h1 class="hero__title">
+            Crack&nbsp;CSIR-NET,&nbsp;GATE<br>
+            &amp;&nbsp;IIT-JAM with<br>
+            <span style="color: var(--color-accent);">J Chemistry</span>
+          </h1>
+
+          <p class="hero__desc">
+            Structured, syllabus-aligned courses taught by Jyoti&nbsp;Rathi.
+            Trusted by&nbsp;15,000+ aspirants. From Physical to Inorganic —
+            every topic, every exam, in one platform.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#courses" class="btn-enroll accessible-touch-target" style="padding: var(--space-3) var(--space-6);">
+              Explore Courses
+            </a>
+            <a href="#" class="btn-secondary accessible-touch-target">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              Watch Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Chemistry Illustration + Floating Cards -->
+        <div class="hero__visual" aria-hidden="true">
+          <svg class="hero__svg-wrap" viewBox="0 0 440 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="220,30 360,110 360,270 220,350 80,270 80,110" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+            <polygon points="220,80 315,135 315,245 220,300 125,245 125,135" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+            <polygon points="220,120 285,158 285,234 220,272 155,234 155,158" fill="var(--color-primary)" fill-opacity="0.05" stroke="var(--color-primary)" stroke-width="1" stroke-opacity="0.2"/>
+            <circle cx="220" cy="196" r="40" fill="var(--color-primary)" fill-opacity="0.08"/>
+            <circle cx="220" cy="196" r="24" fill="var(--color-primary)" fill-opacity="0.12"/>
+            <circle cx="220" cy="196" r="12" fill="var(--color-accent)" fill-opacity="0.9"/>
+            <ellipse cx="220" cy="196" rx="80" ry="28" stroke="var(--color-accent)" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4 3"/>
+            <ellipse cx="220" cy="196" rx="80" ry="28" stroke="var(--color-primary)" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="4 3" transform="rotate(60 220 196)"/>
+            <ellipse cx="220" cy="196" rx="80" ry="28" stroke="var(--color-primary)" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="4 3" transform="rotate(120 220 196)"/>
+            <circle cx="300" cy="196" r="6" fill="var(--color-accent)"/>
+            <circle cx="155" cy="228" r="4" fill="var(--color-primary)" fill-opacity="0.4"/>
+            <circle cx="268" cy="142" r="4" fill="var(--color-primary)" fill-opacity="0.4"/>
+            <text x="220" y="196" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="var(--color-surface)" text-anchor="middle" dominant-baseline="middle">C</text>
+            <circle cx="80" cy="110" r="10" fill="var(--color-surface)" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="80" y="110" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="var(--color-text-muted)" text-anchor="middle" dominant-baseline="middle">N</text>
+            <circle cx="360" cy="110" r="10" fill="var(--color-surface)" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="360" y="110" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="var(--color-text-muted)" text-anchor="middle" dominant-baseline="middle">O</text>
+            <circle cx="360" cy="270" r="10" fill="var(--color-surface)" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="360" y="270" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="var(--color-text-muted)" text-anchor="middle" dominant-baseline="middle">H</text>
+            <circle cx="80" cy="270" r="10" fill="var(--color-surface)" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="80" y="270" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="var(--color-text-muted)" text-anchor="middle" dominant-baseline="middle">S</text>
+            <line x1="80" y1="120" x2="125" y2="142" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="360" y1="120" x2="315" y2="142" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="360" y1="260" x2="315" y2="238" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="80" y1="260" x2="125" y2="238" stroke="#cbd5e1" stroke-width="1.5"/>
+          </svg>
+
+          <!-- Floating card: students -->
+          <div class="hero__floating-card hero__floating-card--1">
+            <div class="hero__floating-icon hero__floating-icon--accent">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <p class="hero__floating-title">Students Enrolled</p>
+              <p class="hero__floating-value">15,000+</p>
+            </div>
+          </div>
+
+          <!-- Floating card: rating -->
+          <div class="hero__floating-card hero__floating-card--2">
+            <div class="hero__floating-icon">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <p class="hero__floating-title">Average Rating</p>
+              <p class="hero__floating-value">4.9 / 5.0</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         2. TRUST BAR
+         ======================================================= -->
+    <section class="trust-bar" aria-label="Platform statistics">
+      <div class="container">
+        <dl class="trust-bar__inner">
+          <div class="trust-card">
+            <dt class="trust-card__label">Students Enrolled</dt>
+            <dd class="trust-card__value">15,000+</dd>
+          </div>
+          <div class="trust-card">
+            <dt class="trust-card__label">Years of Teaching</dt>
+            <dd class="trust-card__value">10+</dd>
+          </div>
+          <div class="trust-card">
+            <dt class="trust-card__label">Courses Available</dt>
+            <dd class="trust-card__value">30+</dd>
+          </div>
+          <div class="trust-card">
+            <dt class="trust-card__label">Exam Selections</dt>
+            <dd class="trust-card__value">2,800+</dd>
+          </div>
+          <div class="trust-card">
+            <dt class="trust-card__label">Student Rating</dt>
+            <dd class="trust-card__value">4.9 ★</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         3. SEARCH SECTION
+         ======================================================= -->
+    <section class="search-section" id="search" aria-labelledby="search-heading">
+      <div class="container">
+        <header class="search-section__header">
+          <h2 class="search-section__title" id="search-heading">Find Your Course</h2>
+          <p style="color: var(--color-text-muted); font-size: var(--font-size-sm);">Search by exam, subject or topic to find the right batch for you.</p>
+        </header>
+
+        <div class="search-bar" role="search">
+          <div class="search-bar__input-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              type="search"
+              class="search-bar__input"
+              id="search-courses-input"
+              placeholder="e.g. &ldquo;Organic Chemistry&rdquo;, &ldquo;CSIR-NET Complete&rdquo;&hellip;"
+              aria-label="Search courses"
+            >
+          </div>
+          <button class="btn-filter accessible-touch-target" aria-label="Open advanced filters">
+            <svg viewBox="0 0 24 24">
+              <line x1="4" y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="11" y1="18" x2="13" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="search-bar__btn-submit accessible-touch-target">Search</button>
+        </div>
+
+        <div class="chips-container" role="group" aria-label="Quick category filters">
+          <button class="chip is-active" type="button">All</button>
+          <button class="chip" type="button">CSIR-NET</button>
+          <button class="chip" type="button">GATE</button>
+          <button class="chip" type="button">IIT-JAM</button>
+          <button class="chip" type="button">Organic</button>
+          <button class="chip" type="button">Physical</button>
+          <button class="chip" type="button">Inorganic</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. FEATURED COURSES
+         ======================================================= -->
+    <section class="courses-section" id="courses" aria-labelledby="courses-heading">
+      <div class="container">
+        <header class="courses-section__header">
+          <div>
+            <h2 class="courses-section__title" id="courses-heading">Featured Courses</h2>
+            <p style="color: var(--color-text-muted); font-size: var(--font-size-sm);">Exam-ready, structured, and taught by an expert with 10+ years of experience.</p>
+          </div>
+          <a href="#" style="font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-primary); display: inline-flex; align-items: center; gap: var(--space-1);">
+            View all
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </header>
+
+        <div class="courses-grid" id="courses-grid" aria-live="polite" aria-label="Featured course listings">
+          <!-- Populated by homepage.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         5. COURSE CATEGORIES
+         ======================================================= -->
+    <section class="categories-section" id="categories" aria-labelledby="categories-heading">
+      <div class="container">
+        <header class="categories-section__header">
+          <h2 class="categories-section__title" id="categories-heading">Browse by Subject</h2>
+          <p style="color: var(--color-text-muted); font-size: var(--font-size-sm);">Choose your subject area and find a batch built for your exam goal.</p>
+        </header>
+
+        <div class="categories-grid" id="categories-grid" aria-label="Course category listings">
+          <!-- Populated by homepage.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- =======================================================
+         SECTION 6 — WHY CHOOSE JCHEMISTRY
+         ======================================================= -->
+    <section class="why-section" id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title" id="why-heading">Why Students Choose JChemistry</h2>
+          <p class="section-desc">Designed for serious aspirants. Every feature is built around your exam goals — nothing more, nothing less.</p>
+        </div>
+        <div class="why-grid why-grid--premium">
+
+          <div class="why-card why-card--premium">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="why-card__title">Structured Learning Roadmap</h3>
+            <p class="why-card__desc">Courses follow a precise sequence — from fundamentals to advanced topics — mirroring the actual exam syllabus progression.</p>
+          </div>
+
+          <div class="why-card why-card--premium">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+            </div>
+            <h3 class="why-card__title">Expert Guidance by Jyoti Rathi</h3>
+            <p class="why-card__desc">Learn directly from Jyoti Rathi — 10+ years of exclusive coaching experience for competitive chemistry exams.</p>
+          </div>
+
+          <div class="why-card why-card--premium">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="why-card__title">Proven Student Success</h3>
+            <p class="why-card__desc">Over 2,800 selections across CSIR-NET, GATE, and IIT-JAM. Our track record speaks for itself.</p>
+          </div>
+
+          <div class="why-card why-card--premium">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 class="why-card__title">Learn Anytime, Anywhere</h3>
+            <p class="why-card__desc">Access all recorded lectures, notes, and tests from any device. Study on your schedule, anywhere, anytime.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION 7 — STUDENT RESULTS
+         ======================================================= -->
+    <section class="results-section" id="results" aria-labelledby="results-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Student Success</span>
+          <h2 class="section-title" id="results-heading">Real Students, Real Results</h2>
+          <p class="section-desc">Over 2,800 selections across CSIR-NET, GATE, and IIT-JAM. These are a few of the stories that inspire us every day.</p>
+        </div>
+        <div class="results-grid" id="results-grid" aria-label="Student success stories">
+          <!-- Populated by trust.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION 8 — TESTIMONIALS
+         ======================================================= -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="background-color: rgba(6,214,160,0.15);">Student Reviews</span>
+          <h2 class="section-title" id="testimonials-heading">What Our Students Say</h2>
+          <p class="section-desc" style="color: var(--color-dark-text-muted);">Thousands of chemistry aspirants chose JChemistry. Here is what they have to say.</p>
+        </div>
+        <div class="testimonials-carousel-wrap">
+          <div class="testimonials-grid" id="testimonials-grid" aria-label="Student testimonials">
+            <!-- Populated by trust.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION 9 — FACULTY
+         ======================================================= -->
+    <section class="faculty-section" id="faculty" aria-labelledby="faculty-heading">
+      <div class="container">
+        <div class="faculty-inner">
+
+          <!-- Left: Photo -->
+          <div class="faculty-visual" aria-hidden="true">
+            <div class="faculty-avatar-wrap">
+              <div class="faculty-avatar">
+                <img src="assets/jyoti_rathi.png" alt="Jyoti Rathi" class="faculty-avatar__img" loading="lazy">
+              </div>
+              <div class="faculty-badge-card">
+                <span class="faculty-badge-card__value">10+</span>
+                <span class="faculty-badge-card__label">Years of Teaching Chemistry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Content -->
+          <div class="faculty-content">
+            <span class="faculty-tag">Meet Your Faculty</span>
+            <h2 class="faculty-name" id="faculty-heading">Jyoti Rathi</h2>
+            <p class="faculty-title">Founder &amp; Lead Chemistry Educator &bull; M.Sc. Chemistry &bull; CSIR-NET JRF Qualified</p>
+
+            <blockquote class="faculty-philosophy">
+              "Chemistry is not memorisation — it is understanding. I teach my students to reason through problems, not recall answers. That is what builds exam confidence."
+            </blockquote>
+
+            <div class="faculty-quals">
+              <span class="faculty-qual-tag">Founder &amp; Lead Educator</span>
+              <span class="faculty-qual-tag">CSIR-NET JRF Qualified</span>
+              <span class="faculty-qual-tag">M.Sc. Chemistry</span>
+              <span class="faculty-qual-tag">GATE Chemistry Mentor</span>
+            </div>
+
+            <div class="faculty-achievements">
+              <div class="faculty-achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>15,000+ students mentored across 10+ years</span>
+              </div>
+              <div class="faculty-achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>2,800+ selections in CSIR-NET, GATE &amp; IIT-JAM</span>
+              </div>
+              <div class="faculty-achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>4.9 average student rating across all batches</span>
+              </div>
+              <div class="faculty-achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>Author of comprehensive CSIR-NET &amp; GATE study material</span>
+              </div>
+            </div>
+
+            <a href="#" class="btn-know-more accessible-touch-target">
+              Know More
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION 10 — FAQ
+         ======================================================= -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know before enrolling. Can't find your answer? Reach out to us directly.</p>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-1">
+              <span>What exams do your courses cover?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-1" role="region">
+              <p class="faq-panel__inner">Our courses are specifically designed for CSIR-NET Chemical Sciences, GATE Chemistry (CY), and IIT-JAM Chemistry. Each exam has dedicated batches structured around the official syllabus.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-2">
+              <span>Are the courses available in Hindi or English?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-2" role="region">
+              <p class="faq-panel__inner">Classes are delivered in a bilingual format — explanations are in Hindi for clarity, while terminology, notes, and written content are in English, matching the exam pattern.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-3">
+              <span>What is the validity of a course after purchase?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-3" role="region">
+              <p class="faq-panel__inner">Validity depends on the batch selected. Most courses offer 12–24 months of access from the date of purchase, so you can revise at your own pace.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-4">
+              <span>Will I get study material and notes?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-4" role="region">
+              <p class="faq-panel__inner">Yes. Every course includes structured PDF notes, handwritten study material, previous year solved papers, and topic-wise practice question banks.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-5">
+              <span>Are mock tests and practice sessions included?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-5" role="region">
+              <p class="faq-panel__inner">Absolutely. Each batch includes regular topic-wise tests, full-length mock exams modelled on the actual paper pattern, and detailed performance analytics.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-6">
+              <span>Can I watch lectures on my mobile device?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-6" role="region">
+              <p class="faq-panel__inner">Yes. All recorded and live sessions are fully accessible through our mobile-optimised platform. You can study on any device — phone, tablet, or desktop.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-7">
+              <span>What happens if I miss a live class?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-7" role="region">
+              <p class="faq-panel__inner">All live sessions are recorded and made available for playback within 24 hours. You will never miss a class even if you cannot attend it live.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger accessible-touch-target" aria-expanded="false" aria-controls="faq-panel-8">
+              <span>Is there any support available if I have doubts?</span>
+              <svg class="faq-trigger__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-panel" id="faq-panel-8" role="region">
+              <p class="faq-panel__inner">Yes. We have a dedicated doubt-resolution system. You can post doubts after each lecture, and they are answered by the faculty within 48 hours.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION 11 — FINAL CTA
+         ======================================================= -->
+    <!-- =======================================================
+         SECTION 11 — FINAL CTA
+         ======================================================= -->
+    <!-- <section class="final-cta" id="enroll" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="final-cta__premium-card">
+          <h2 class="final-cta__title" id="cta-heading">
+            Ready to secure your top rank?
+          </h2>
+          <p class="final-cta__desc">
+            Join 15,000+ students who trusted JChemistry and achieved their dreams. Stop guessing what to study and start following a proven roadmap today.
+          </p>
+          <div class="final-cta__actions">
+            <a href="#courses" class="btn-cta-primary accessible-touch-target">
+              Start Learning Now
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn-cta-secondary accessible-touch-target">
+              Watch Free Demo
+            </a>
+          </div>
+          <div class="final-cta__trust-badges">
+            <span class="final-cta__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Trusted by 15K+</span>
+            <span class="final-cta__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Secure Payment</span>
+            <span class="final-cta__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12z"></path><path d="M12 8v4l3 3"></path></svg> Cancel Anytime</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!-- Mobile Sticky Bottom CTA Bar -->
+  <div class="sticky-bottom-bar hide-on-desktop">
+    <a href="#" class="sticky-bottom-bar__btn-login accessible-touch-target">Log in</a>
+    <a href="#" class="sticky-bottom-bar__btn-enroll accessible-touch-target">Enroll Now</a>
+  </div>
+
+  <!-- =======================================================
+       SECTION 12 — FOOTER
+       ======================================================= -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand__logo" aria-label="JChemistry Homepage">
+            <img src="assets/jchemistry_logo.png" alt="JChemistry Logo" class="footer-brand__logo-img">
+            JChemistry
+          </a>
+          <p class="footer-brand__desc">
+            Premium coaching for CSIR-NET, GATE, and IIT-JAM chemistry aspirants.
+            Structured. Expert-led. Result-proven.
+          </p>
+          <div class="footer-brand__socials">
+            <a href="https://facebook.com" class="footer-social-link accessible-touch-target" target="_blank" rel="noopener noreferrer" aria-label="JChemistry on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-link accessible-touch-target" target="_blank" rel="noopener noreferrer" aria-label="JChemistry on Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-link accessible-touch-target" target="_blank" rel="noopener noreferrer" aria-label="JChemistry on YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.507 9.388.507 9.388.507s7.517 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-link accessible-touch-target" target="_blank" rel="noopener noreferrer" aria-label="JChemistry on LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Courses Column -->
+        <nav aria-label="Footer courses navigation">
+          <h3 class="footer-col__title">Courses</h3>
+          <ul class="footer-col__list">
+            <li><a href="#" class="footer-col__link">CSIR-NET Complete</a></li>
+            <li><a href="#" class="footer-col__link">GATE Chemistry</a></li>
+            <li><a href="#" class="footer-col__link">IIT-JAM Prep</a></li>
+            <li><a href="#" class="footer-col__link">Organic Chemistry</a></li>
+            <li><a href="#" class="footer-col__link">Physical Chemistry</a></li>
+            <li><a href="#" class="footer-col__link">Inorganic Chemistry</a></li>
+          </ul>
+        </nav>
+
+        <!-- Resources Column -->
+        <nav aria-label="Footer resources navigation">
+          <h3 class="footer-col__title">Resources</h3>
+          <ul class="footer-col__list">
+            <li><a href="#" class="footer-col__link">Free Demo Course</a></li>
+            <li><a href="#" class="footer-col__link">Previous Year Papers</a></li>
+            <li><a href="#" class="footer-col__link">Syllabus PDFs</a></li>
+            <li><a href="#" class="footer-col__link">Study Notes</a></li>
+            <li><a href="#" class="footer-col__link">Student Results</a></li>
+          </ul>
+        </nav>
+
+        <!-- Support Column -->
+        <nav aria-label="Footer support navigation">
+          <h3 class="footer-col__title">Support</h3>
+          <ul class="footer-col__list">
+            <li><a href="#" class="footer-col__link">About JChemistry</a></li>
+            <li><a href="#" class="footer-col__link">Contact Us</a></li>
+            <li><a href="#" class="footer-col__link">FAQ</a></li>
+            <li><a href="#" class="footer-col__link">Refund Policy</a></li>
+            <li><a href="tel:+919876543210" class="footer-col__link">+91 98765 43210</a></li>
+            <li><a href="mailto:info@jchemistry.com" class="footer-col__link">info@jchemistry.com</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Newsletter Strip -->
+      <div class="footer-newsletter">
+        <div class="footer-newsletter__inner">
+          <div class="footer-newsletter__text">
+            <h3>Get exam updates &amp; free resources</h3>
+            <p>Subscribe for syllabus changes, free notes, and batch announcements.</p>
+          </div>
+          <form class="footer-newsletter__form" aria-label="Newsletter subscription" onsubmit="return false;">
+            <label for="newsletter-email" class="sr-only">Your email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              class="footer-newsletter__input"
+              placeholder="Enter your email"
+              aria-label="Email for newsletter"
+            >
+            <button type="submit" class="footer-newsletter__btn accessible-touch-target">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">&copy; 2026 JChemistry. All rights reserved.</p>
+        <div class="footer-bottom__links">
+          <a href="#" class="footer-bottom__link">Privacy Policy</a>
+          <a href="#" class="footer-bottom__link">Terms of Service</a>
+          <a href="#" class="footer-bottom__link">Refund Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
