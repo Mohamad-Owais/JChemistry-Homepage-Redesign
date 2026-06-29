@@ -27,9 +27,31 @@ body {
   line-height: var(--line-height-normal);
   color: var(--color-text);
   background-color: var(--color-bg);
+  background-image:
+    radial-gradient(
+      circle at top center,
+      rgba(15, 159, 104, 0.08) 0%,
+      rgba(15, 159, 104, 0.03) 22%,
+      rgba(15, 159, 104, 0) 60%
+    ),
+    linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 64%);
+  background-repeat: no-repeat;
+  background-size: 100% clamp(560px, 70vw, 920px);
+  background-position: top center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+:root.dark body {
+  background-image:
+    radial-gradient(
+      circle at top center,
+      rgba(88, 166, 255, 0.14) 0%,
+      rgba(88, 166, 255, 0.04) 22%,
+      rgba(88, 166, 255, 0) 60%
+    ),
+    linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 64%);
 }
 
 /* ==========================================================================
